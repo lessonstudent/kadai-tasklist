@@ -14,7 +14,7 @@
   </p>
   <p>
     <%= f.label :status, '進行状況' %>
-    <%= f.text_field :status %> 
+    <%= f.select :status, [['OK','OK'],['NG','NG']], :prompt =>'選択' %> 
   </p>
   <%= f.submit '作成' %>
 <% end %>
