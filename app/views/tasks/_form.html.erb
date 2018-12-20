@@ -1,7 +1,11 @@
 <%= form_for(task) do |f| %>
-  <%= f.label :content, 'タスク内容' %>
-  <br>
-  <%= f.text_field :content %>
-  <br>
+  <p>
+    <%= f.label :content, 'タスク内容' %>
+    <%= f.text_field :content %> 
+  </p>
+  <p>
+    <%= f.label :status, '進行状況' %>
+    <%= f.text_field :status %> 
+  </p>
   <%= f.submit '作成' %>
 <% end %>

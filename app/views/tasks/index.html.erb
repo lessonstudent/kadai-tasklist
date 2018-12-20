@@ -6,7 +6,7 @@
     <!--タスクid-->
     <%= link_to tasks.id, task_path(tasks) %>:
     <!--タスク-->
-    <%= tasks.content %>
+    <%= tasks.content %> &gt; <%= tasks.status %>
   </li>
   <% end %>
 </ul>
