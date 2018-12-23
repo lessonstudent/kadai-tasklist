@@ -56,3 +56,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # kaminari
 gem 'kaminari'
+
+# postgreSQL
+group :production do
+  gem 'pg', '0.21.0'
+end
